@@ -1,3 +1,15 @@
+backend/game_servers/
+backend/media/
+backend/backend/__pycache__/
+backend/api/migrations/
+backend/api/__pycache__/
+backend/api/.env
+env/
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Github Python default template
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
