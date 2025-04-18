@@ -10,3 +10,4 @@ sqlparse
 python-dotenv
 channels
 uvicorn
+websockets

@@ -30,19 +30,22 @@ if [ ! -f "$ENV_PATH" ]; then
 USER_REGISTRATION_ENABLED=True
 EOT
 else
-  echo ".env file already exists in backend/ Skipping"
+  echo ".env file already exists in backend/. Skipping"
 fi
 
 echo "Running migrations"
+cd backend
 $PYTHON manage.py migrate
 
-echo "Project setup complete\n"
-
-echo "To run the server, use:"
-echo "uvicorn backend.asgi:application --host 0.0.0.0 --port 8000"
 echo ""
-echo "For future use:"
+echo "Project setup complete"
+echo ""
 echo "To activate the virtual environment, run:"
 echo "source env/bin/activate"
+echo ""
 echo "To deactivate the virtual environment, run:"
 echo "deactivate"
+echo ""
+echo "To run the server, use:"
+echo "cd backend"
+echo "uvicorn backend.asgi:application --host 0.0.0.0 --port 8000"

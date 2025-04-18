@@ -1,7 +1,7 @@
 backend/game_servers/
 backend/media/
 backend/backend/__pycache__/
-backend/api/migrations/
+backend/api/migrations/__pycache__/
 backend/api/__pycache__/
 backend/api/.env
 env/
